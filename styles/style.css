@@ -32,6 +32,7 @@
     font-size: 18px;
     font-weight: 600;
     border: none;
+    color: white;
 }
 
 /* header  */
@@ -271,7 +272,34 @@ main {
     margin-top: 6px;
 }
 
+/* run section start here  */
+.runSection {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+    gap: 150px;
+}
 
+.runSection-title {
+    padding: 10px;
+}
+
+.runSection-title>h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.runSection-title>p {
+    margin: 14px 0 34px 0;
+    color: var(--dark);
+}
+
+.runImage>img {
+    width: 100%;
+    border-radius: 18px;
+}
 
 
 
@@ -428,5 +456,24 @@ main {
     }
 
 
+    /* run section start here  */
+    .runSection {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .runSection-title {
+        padding: 0px;
+    }
+
+    .runSection-title>h1 {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .runSection-title>p {
+        margin: 24px 0;
+    }
 
 }
