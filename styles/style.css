@@ -220,6 +220,16 @@ nav ul li a {
 
 /* small devices responsive site  */
 @media screen and (max-width:576px) {
+
+    .primaryBtn {
+        border-radius: 32px;
+        background: rgb(230, 83, 60);
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+    }
+
     header {
         padding: 20px;
     }
@@ -235,4 +245,88 @@ nav ul li a {
     .navIcon {
         display: block;
     }
+
+    /* header main section  */
+    .headerMainSection {
+        gap: 48px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    /* left  */
+    .headerLeft {
+        width: 100%;
+    }
+
+    .headerLeft>h1 {
+        font-size: 36px;
+    }
+
+    .btnSection {
+        justify-content: space-between;
+    }
+
+    .bigS {
+        color: white;
+        display: none;
+    }
+
+    .smallS {
+        display: block;
+        color: white;
+    }
+
+    .downloadAppBtn {
+        border-radius: 32px;
+        padding: 10px 20px 10px 20px;
+    }
+
+
+
+    /* right  */
+    .headerRight {
+        width: 100%;
+    }
+
+    .workOutVideo {
+        padding: 10px 15px;
+        right: 10px;
+        top: 70px;
+    }
+
+    .workOutVideo>h1 {
+        font-size: 30px;
+    }
+
+    .workOutVideo>p {
+        font-size: 10px;
+    }
+
+    .tutorialVideoMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        bottom: 100px;
+        left: 0px;
+
+    }
+
+    .tutorialVideoMain>p {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+    }
+
+    .tutorialVideo>h1 {
+        font-size: 20px;
+    }
+
+    .tutorialVideo>p {
+        font-size: 10px;
+        color: var(--dark);
+    }
+
 }
