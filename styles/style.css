@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 /* -----------------------shared class-------------------------  */
 :root {
     --primary-color: rgb(230, 83, 60);
@@ -32,9 +33,6 @@
     font-weight: 600;
     border: none;
 }
-
-
-
 
 /* header  */
 body {
@@ -98,7 +96,6 @@ nav ul li a {
     display: none;
 }
 
-
 /* header main section  */
 .headerMainSection {
     max-width: 1060px;
@@ -154,8 +151,6 @@ nav ul li a {
     border: 1px solid white;
 }
 
-
-
 /* right  */
 .headerRight {
     width: 50%;
@@ -208,8 +203,6 @@ nav ul li a {
     background-color: var(--primary-color);
 }
 
-.tutorialVideo {}
-
 .tutorialVideo>h1 {
     font-size: 24px;
 }
@@ -217,6 +210,80 @@ nav ul li a {
 .tutorialVideo>p {
     color: var(--dark);
 }
+
+
+/* main section  */
+main {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.mainContainer {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.HabitsSection {
+    padding: 100px 0px;
+}
+
+.habits-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habits-title>h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.habits-title>p {
+    color: var(--dark);
+    margin-bottom: 54px;
+}
+
+.habit-Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content>img {
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 26px;
+}
+
+.content>h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.content>p{
+    color: var(--dark);
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* small devices responsive site  */
 @media screen and (max-width:576px) {
@@ -281,8 +348,6 @@ nav ul li a {
         padding: 10px 20px 10px 20px;
     }
 
-
-
     /* right  */
     .headerRight {
         width: 100%;
@@ -303,9 +368,6 @@ nav ul li a {
     }
 
     .tutorialVideoMain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 5px;
         padding: 10px;
         bottom: 100px;
