@@ -92,3 +92,24 @@ nav ul li a {
     font-weight: 600;
     border: none;
 }
+
+.navIcon {
+    display: none;
+}
+
+
+/* small devices responsive site  */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+    nav{
+        padding: 0;
+    }
+    nav>ul {
+        display: none;
+    }
+    .navIcon {
+        display: block;
+    }
+}
