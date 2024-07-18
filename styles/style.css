@@ -222,10 +222,11 @@ main {
 .mainContainer {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 100px 0px;
 }
 
 .HabitsSection {
-    padding: 100px 0px;
+    padding: 0px 0px;
 }
 
 .habits-title {
@@ -276,6 +277,7 @@ main {
 .runSection {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     padding: 30px;
@@ -302,6 +304,127 @@ main {
 }
 
 
+/* bmi section  */
+.BMI-Content {
+    background-color: black;
+    color: white;
+}
+
+.bmi-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bmi-title>h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.bmi-title>p {
+    color: var(--dark);
+}
+
+
+/* main section  */
+.BMI-main-section {
+    background-color: #222222;
+    color: white;
+}
+
+.bmi-under-section {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.bmiLeft {
+    width: 50%;
+}
+
+.bmiLeft>h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+th {
+    color: white;
+}
+
+td {
+    color: var(--dark);
+}
+
+th,
+td {
+    border: 1px solid var(--dark);
+    padding: 15px;
+    text-align: left;
+}
+
+.bmiRight {
+    width: 50%;
+}
+
+.bmiRight>h1 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.bmiRight>p {
+    color: var(--dark);
+    margin: 20px 0px 40px 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form>input,
+select {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    color: var(--dark);
+}
+
+input::placeholder {
+    color: var(--dark);
+}
+
+.gender {}
+
+.factoryOfGym {
+    margin-top: 12px;
+    width: 100%;
+    color: var(--dark);
+}
+
+form>button {
+    margin-top: 30px;
+}
+
+select>option {
+    color: var(--dark);
+    background-color: #222222;
+    padding: 20px;
+    border-bottom: white;
+}
 
 
 
