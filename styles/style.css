@@ -599,4 +599,95 @@ select>option {
         margin: 24px 0;
     }
 
+    /* BMI section  */
+
+
+    /* bmi section  */
+    .BMI-Content {
+        background-color: black;
+        color: white;
+    }
+
+    .bmi-title {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .bmi-title>h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .bmi-title>p {
+        color: var(--dark);
+    }
+
+
+    /* BMI section  */
+
+    .bmi-under-section {
+        padding: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .bmiLeft {
+        width: 100%;
+    }
+
+    .bmiLeft>h1 {
+        margin-bottom: 30px;
+    }
+
+    .bmiRight {
+        width: 100%;
+    }
+
+    .bmiRight>p {
+        margin: 10px 0px 30px 0;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .form>input,
+    select {
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        /* padding: 12px 40px 12px 20px; */
+        border: none;
+        color: var(--dark);
+        width: 100%;
+    }
+
+    input::placeholder {
+        color: var(--dark);
+    }
+
+    .gender {}
+
+    .factoryOfGym {
+        margin-top: 5px;
+        width: 100%;
+        color: var(--dark);
+    }
+
+    form>button {
+        margin-top: 30px;
+    }
+
+    select>option {
+        color: var(--dark);
+        background-color: #222222;
+        padding: 20px;
+        border-bottom: white;
+        overflow: hidden;
+    }
+
 }
