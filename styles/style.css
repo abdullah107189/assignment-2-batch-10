@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -235,6 +236,8 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .habits-title>h1 {
@@ -280,6 +283,7 @@ main {
     align-items: center;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    margin-top: 100px;
     padding: 30px;
     gap: 150px;
 }
@@ -316,10 +320,12 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    width: 60%;
+    margin: 0 auto 50px auto;
 }
 
 .bmi-title>h1 {
+    color: white;
     font-size: 48px;
     margin-bottom: 10px;
 }
@@ -407,8 +413,6 @@ input::placeholder {
     color: var(--dark);
 }
 
-.gender {}
-
 .factoryOfGym {
     margin-top: 12px;
     width: 100%;
@@ -426,8 +430,178 @@ select>option {
     border-bottom: white;
 }
 
+/* =============team section  =====================*/
+
+.teamSection {
+    background-color: black;
+}
+
+.teamUnderSection {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.teamSection-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    color: white;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.teamSection-title>h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.teamSection-title>p {
+    color: var(--dark);
+}
+
+.teamContent {
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.teamMemberInfo {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+
+}
+
+.teamMemberInfo>h1 {
+    font-size: 20px;
+    position: relative;
+
+}
+
+.teamMemberInfo>p {
+    color: var(--dark);
+}
+
+.img1 {
+    background-image: url('/images/trainer1.png');
+    width: 100%;
+    height: 272px;
+
+}
+
+.img2 {
+    background-image: url('/images/trainer2.png');
+    width: 100%;
+    height: 272px;
+
+}
+
+.img3 {
+    background-image: url('/images/trainer3.png');
+    width: 100%;
+    height: 272px;
+
+}
+
+.img4 {
+    background-image: url('/images/trainer4.png');
+    width: 100%;
+    height: 272px;
+
+}
+
+.img5 {
+    background-image: url('/images/trainer5.png');
+    width: 100%;
+    height: 272px;
+
+}
+
+.img6 {
+    background-image: url('/images/trainer6.png');
+    width: 100%;
+    height: 272px;
+
+}
 
 
+/* ======================footer section =========== */
+footer {
+    background-color: #222222;
+}
+
+.footer-section {
+    max-width: 1060px;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 0;
+}
+
+.footerLogo {
+    grid-column: 2 span;
+}
+
+.footerLogo>h1 {
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.footerLogo>p {
+    margin-top: 20px;
+    color: var(--dark);
+    margin-right: 80px;
+}
+
+.fStart {}
+
+.fStart>h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.fStart>ul>li {
+    list-style: none;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.footer-hr {
+    max-width: 1060px;
+    margin: 0 auto;
+    color: white;
+    opacity: 0.3;
+    padding: 0px 0px 36px 0;
+}
+
+.footer-hr-under {
+    width: 100%;
+}
+
+footer>p {
+    color: var(--dark);
+    text-align: center;
+    padding-bottom: 35px;
+}
 
 
 
@@ -552,7 +726,11 @@ select>option {
 
     /* habit section start here  */
     .HabitsSection {
-        padding: 30px 0px;
+        padding: 0px 0px;
+    }
+
+    .habits-title {
+        width: 100%;
     }
 
     .habits-title>h1 {
@@ -613,11 +791,12 @@ select>option {
         justify-content: start;
         flex-direction: column;
         margin-bottom: 50px;
+        width: 100%;
         padding: 20px;
     }
 
     .bmi-title>h1 {
-        font-size: 48px;
+        font-size: 32px;
         margin-bottom: 10px;
     }
 
@@ -690,4 +869,53 @@ select>option {
         overflow: hidden;
     }
 
+
+    /* =========================team section  =========================*/
+
+    .teamUnderSection {
+        padding: 20px 20px 50px 20px;
+    }
+
+    .teamSection-title {
+        width: 100%;
+    }
+
+    .teamContent {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* ======================footer section =========== */
+    footer {
+        background-color: #222222;
+        padding: 20px;
+    }
+
+    .footer-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 30px 0;
+    }
+    .fStart>h1{
+        margin-bottom: 20px;
+    }
+
+    .footerLogo {
+        grid-column: 1 span;
+    }
+
+    .fStart>ul>li {
+        margin-bottom: 15px;
+    }
+
+    .footer-hr {
+        padding: 0px 0px 26px 0;
+    }
+
+    footer>p {
+        padding-bottom: 25px;
+    }
 }
